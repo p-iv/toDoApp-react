@@ -5,8 +5,8 @@ export default function TaskList({ tasks, onDeleteTask }) {
   return (
     <div className="tasklist">
       <ul className="tasks">
-        {tasks.map((todo) => (
-          <Task onDeleteTask={onDeleteTask} key={todo.id} todo={todo} />
+        {tasks.map((task) => (
+          <Task onDeleteTask={onDeleteTask} key={task.id} task={task} />
         ))}
       </ul>
     </div>

@@ -1,13 +1,13 @@
 import "./Task.css";
 
-export default function Task({ todo, onDeleteTask }) {
+export default function Task({ task, onDeleteTask }) {
   return (
     <li className="task">
       <input className="check" type="checkbox" />
-      <span>{todo.task}</span>
+      <span>{task.task}</span>
       <svg
         className="close"
-        onClick={onDeleteTask}
+        onClick={() => onDeleteTask(task.id)}
         xmlns="http://www.w3.org/2000/svg"
         width="18"
         height="18"
