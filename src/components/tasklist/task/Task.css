@@ -1,13 +1,37 @@
 .task {
   width: 100%;
   height: 65px;
-  border-bottom: 1px solid hsl(234, 11%, 52%);
+  border-bottom: 1px solid hsl(233, 14%, 35%);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   color: hsl(234, 39%, 85%);
+  position: relative;
 }
-input {
-  width: 30px;
+.check {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid hsl(237, 14%, 26%);
   border-radius: 50%;
+  background: hsl(235, 24%, 19%);
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+}
+.check:checked {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+}
+.check:hover {
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+.task:hover {
+  cursor: pointer;
 }

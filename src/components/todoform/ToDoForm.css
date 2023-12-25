@@ -7,6 +7,7 @@
   margin-top: 48px;
 }
 input {
+  width: 100%;
   background-color: hsl(235, 24%, 19%);
   border: 0;
   margin-left: 32px;

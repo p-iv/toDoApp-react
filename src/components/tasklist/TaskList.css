@@ -1,13 +1,33 @@
 .tasklist {
   width: 100%;
   height: 350px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   margin-top: 30px;
   background-color: hsl(235, 24%, 19%);
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 10px 60px -20px #000;
 }
 .tasks {
-  overflow: scroll;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsl(235, 24%, 19%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(234, 39%, 85%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(235, 21%, 11%);
 }
