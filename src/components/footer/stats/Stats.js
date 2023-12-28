@@ -1,9 +1,11 @@
 import "./Stats.css";
 
-export default function Stats() {
+export default function Stats({ tasks }) {
+  const numTasks = tasks.length;
+
   return (
     <div className="stats">
-      <p>X items left</p>
+      <p>You have {numTasks} items </p>
     </div>
   );
 }

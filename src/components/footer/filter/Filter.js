@@ -1,11 +1,11 @@
 import "./Filter.css";
 
-export default function Filter() {
+export default function Filter({ onActive, onAll, onCompleted }) {
   return (
     <div className="filter">
-      <button>All</button>
-      <button>Active</button>
-      <button>Completed</button>
+      <button onClick={onAll}>All</button>
+      <button onClick={onActive}>Active</button>
+      <button onClick={onCompleted}>Completed</button>
     </div>
   );
 }

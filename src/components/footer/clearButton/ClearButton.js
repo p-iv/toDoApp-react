@@ -1,5 +1,9 @@
 import "./ClearButton.css";
 
-export default function ClearButton() {
-  return <button className="clearbutton">Clear Completed</button>;
+export default function ClearButton({ onClear }) {
+  return (
+    <button onClick={onClear} className="clearbutton">
+      Clear list
+    </button>
+  );
 }

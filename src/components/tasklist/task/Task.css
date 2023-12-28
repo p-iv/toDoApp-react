@@ -1,22 +1,3 @@
-.task {
-  width: 100%;
-  height: 65px;
-  border-bottom: 1px solid hsl(233, 14%, 35%);
-  display: flex;
-  align-items: center;
-  color: hsl(234, 39%, 85%);
-  position: relative;
-}
-.check {
-  appearance: none;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 2px solid hsl(237, 14%, 26%);
-  border-radius: 50%;
-  background: hsl(235, 24%, 19%);
-  cursor: pointer;
-  margin: 0 20px 0 20px;
-}
 .check:checked {
   background-image: linear-gradient(
     to bottom,
@@ -24,6 +5,7 @@
     hsl(280, 87%, 65%)
   );
 }
+
 .check:hover {
   cursor: pointer;
 }
