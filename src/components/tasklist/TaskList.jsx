@@ -1,9 +1,13 @@
 import "./TaskList.css";
 import Task from "./task/Task";
 
-export default function TaskList({ tasks, onDeleteTask, isBlack }) {
-  const bgColor = isBlack ? "hsl(235, 24%, 19%)" : "hsl(0, 0%, 98%)";
-
+export default function TaskList({
+  tasks,
+  onDeleteTask,
+  bgColor,
+  color,
+  borderColor,
+}) {
   const taskListStyle = {
     width: "100%",
     height: "350px",
@@ -19,10 +23,11 @@ export default function TaskList({ tasks, onDeleteTask, isBlack }) {
       <ul className="tasks">
         {tasks.map((task) => (
           <Task
-            isBlack={isBlack}
             onDeleteTask={onDeleteTask}
             key={task.id}
             task={task}
+            color={color}
+            borderColor={borderColor}
           />
         ))}
       </ul>

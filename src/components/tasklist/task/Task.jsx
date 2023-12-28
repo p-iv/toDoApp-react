@@ -1,21 +1,7 @@
 import { useState } from "react";
 import "./Task.css";
 
-export default function Task({ task, onDeleteTask, isBlack }) {
-  const [checked, setChecked] = useState(false);
-  function handleToggleCheck() {
-    setChecked(() => !checked);
-  }
-  if (checked === false) {
-    task.checked = false;
-  } else {
-    task.checked = true;
-  }
-
-  const borderColor = isBlack ? "hsl(237, 14%, 26%)" : "hsl(233, 11%, 84%)";
-  const color = isBlack ? "hsl(234, 39%, 85%)" : "hsl(235, 24%, 19%)";
-  const checkColor = isBlack ? "hsl(235, 24%, 19%)" : "hsl(0, 0%, 98%)";
-
+export default function Task({ task, onDeleteTask, color, borderColor }) {
   const taskStyle = {
     width: "100%",
     height: "65px",
@@ -31,10 +17,20 @@ export default function Task({ task, onDeleteTask, isBlack }) {
     height: "1.5rem",
     border: `2px solid ${borderColor}`,
     borderRadius: "50%",
-    background: checkColor,
     cursor: "pointer",
     margin: "0 20px 0 20px",
   };
+
+  const [checked, setChecked] = useState(false);
+  function handleToggleCheck() {
+    setChecked(() => !checked);
+  }
+  if (checked === false) {
+    task.checked = false;
+  } else {
+    task.checked = true;
+  }
+
   return (
     <li className="task" style={taskStyle}>
       <input

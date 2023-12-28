@@ -1,12 +1,3 @@
-.filter {
-  display: flex;
-  gap: 12px;
-}
-.filter button {
-  background-color: hsl(235, 24%, 19%);
-  border: 0;
-  color: hsl(233, 14%, 35%);
-}
 .filter button:hover {
   color: hsl(236, 33%, 92%);
   cursor: pointer;
