@@ -1,3 +1,30 @@
+Skip to content
+p-iv
+/
+toDoApp-react
+
+Type / to search
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Commit
+Update README.md
+ master
+@p-iv
+p-iv committed 7 minutes ago 
+1 parent 319b128
+commit bcc44a5
+Showing 1 changed file with 0 additions and 69 deletions.
+ 69 changes: 0 additions & 69 deletions69  
+README.md
+@@ -1,70 +1 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +95,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+0 comments on commit bcc44a5
+@p-iv
+Comment
+ 
+Leave a comment
+ 
+Footer
+© 2024 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+Update README.md · p-iv/toDoApp-react@bcc44a5
