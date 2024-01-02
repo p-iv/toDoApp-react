@@ -1,13 +1,19 @@
 import "./Filter.css";
-export default function Filter({ onActive, onAll, onCompleted }) {
+export default function Filter({
+  onActive,
+  onAll,
+  onCompleted,
+  bgColor,
+  color,
+}) {
   const filterStyle = {
     display: "flex",
     gap: "12px",
   };
   const filterButton = {
-    backgroundColor: "hsl(235, 24%, 19%)",
+    backgroundColor: bgColor,
     border: "0",
-    color: "hsl(233, 14%, 35%)",
+    color: color,
   };
 
   return (

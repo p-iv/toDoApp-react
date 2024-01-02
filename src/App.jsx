@@ -43,11 +43,13 @@ function App() {
   function handleToggleTheme() {
     setIsBlack(() => !isBlack);
   }
+
   //styles for app component
   const appBgColor = isBlack ? "hsl(235, 21%, 11%)" : "hsl(236, 33%, 92%)";
-  const color = isBlack ? "hsl(234, 39%, 85%)" : "hsl(235, 24%, 19%)";
+  const color = isBlack ? "hsl(233, 14%, 35%)" : "hsl(235, 24%, 19%)";
   const bgColor = isBlack ? "hsl(235, 24%, 19%)" : "hsl(0, 0%, 98%)";
   const borderColor = isBlack ? "hsl(237, 14%, 26%)" : "hsl(233, 11%, 84%)";
+
   const appStyle = {
     width: "100%",
     height: "100vh",
@@ -77,8 +79,10 @@ function App() {
             onActive={handleActive}
             onAll={handleAll}
             onCompleted={handleCompleted}
+            bgColor={bgColor}
+            color={color}
           />
-          <ClearButton onClear={handleClear} />
+          <ClearButton onClear={handleClear} color={color} bgColor={bgColor} />
         </Footer>
       </ToDoList>
     </div>
