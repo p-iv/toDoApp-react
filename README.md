@@ -1,6 +1,6 @@
 <h1>ToDoApp in react</h1> <br />
 functionalities: <br />
-1.add task
+1.add task <br />
 2. remove task <br />
 3. clear list <br />
 4. filters(but don't working correctly, it will be fixed) <br />
