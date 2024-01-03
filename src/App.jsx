@@ -46,7 +46,8 @@ function App() {
 
   //styles for app component
   const appBgColor = isBlack ? "hsl(235, 21%, 11%)" : "hsl(236, 33%, 92%)";
-  const color = isBlack ? "hsl(233, 14%, 35%)" : "hsl(235, 24%, 19%)";
+  const primaryColor = isBlack ? "hsl(234, 39%, 85%)" : "hsl(235, 24%, 19%)";
+  const secondaryColor = isBlack ? "hsl(233, 14%, 35%)" : "hsl(235, 24%, 19%)";
   const bgColor = isBlack ? "hsl(235, 24%, 19%)" : "hsl(0, 0%, 98%)";
   const borderColor = isBlack ? "hsl(237, 14%, 26%)" : "hsl(233, 11%, 84%)";
 
@@ -64,12 +65,16 @@ function App() {
       <ToDoList>
         <Header onToggleTheme={handleToggleTheme} isBlack={isBlack} />
 
-        <ToDoForm onAddTask={handleAddTask} bgColor={bgColor} color={color} />
+        <ToDoForm
+          onAddTask={handleAddTask}
+          bgColor={bgColor}
+          color={primaryColor}
+        />
         <TaskList
           tasks={tasks}
           onDeleteTask={handleDeleteTask}
           bgColor={bgColor}
-          color={color}
+          color={primaryColor}
           borderColor={borderColor}
         />
 
@@ -80,9 +85,13 @@ function App() {
             onAll={handleAll}
             onCompleted={handleCompleted}
             bgColor={bgColor}
-            color={color}
+            color={secondaryColor}
           />
-          <ClearButton onClear={handleClear} color={color} bgColor={bgColor} />
+          <ClearButton
+            onClear={handleClear}
+            color={secondaryColor}
+            bgColor={bgColor}
+          />
         </Footer>
       </ToDoList>
     </div>
